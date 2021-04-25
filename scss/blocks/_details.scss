@@ -1,0 +1,21 @@
+.details {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  padding-top: 0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 1fr;
+}
+
+@include breakpoint-down (950) {
+  .details {
+    overflow-x: auto;
+  }
+}
+
+@include breakpoint-down (768) {
+  .details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

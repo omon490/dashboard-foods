@@ -380,4 +380,29 @@ body {
   font-size: 2.5em;
   color: #03a9f4;
 }
+
+.details {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  padding-top: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
+
+@media only screen and (max-width: 950px) {
+  .details {
+    overflow-x: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .details {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
 /*# sourceMappingURL=styles.css.map */
