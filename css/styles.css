@@ -405,4 +405,135 @@ body {
         grid-template-columns: repeat(1, 1fr);
   }
 }
+
+.orders {
+  position: relative;
+  min-height: 530px;
+  background-color: #Fff;
+  padding: 20px;
+}
+
+.orders__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.orders__header-heding {
+  font-weight: 600;
+}
+
+.orders__header-button {
+  position: relative;
+  padding: 5px 10px;
+  background-color: #03a9f4;
+  color: #Fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.orders__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .orders__header-heding {
+    font-weight: 600;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .orders {
+    overflow-x: auto;
+  }
+}
+
+.table__thead .table__td {
+  font-weight: 600;
+}
+
+.table__tbody .table__tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table__tbody .table__tr:hover {
+  background-color: #03a9f4;
+  color: #Fff;
+}
+
+.table__tbody .table__tr:last-child {
+  border-bottom: none;
+}
+
+.table__td {
+  padding: 9px 5px;
+}
+
+.table__tbody .table__td:last-child,
+.table__thead .table__td:last-child {
+  text-align: right;
+}
+
+.table__tbody .table__td:nth-child(2),
+.table__thead .table__td:nth-child(2) {
+  text-align: center;
+  padding-right: 20px;
+}
+
+.table__tbody .table__td:nth-child(3),
+.table__thead .table__td:nth-child(3) {
+  text-align: center;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .table {
+    width: 600px;
+  }
+}
+
+.status {
+  position: relative;
+  padding: 2px 4px;
+  background-color: #f00;
+  color: #Fff;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.status--delivered {
+  background-color: #8de02c;
+}
+
+.status--pending {
+  background-color: #f9ca3f;
+}
+
+.status--return {
+  background-color: #f00;
+}
+
+.status--inprogress {
+  background-color: #1795ce;
+}
+
+@media only screen and (max-width: 1050px) {
+  .status--inprogress {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 50px;
+    text-overflow: ellipsis;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

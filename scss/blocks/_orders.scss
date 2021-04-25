@@ -1,0 +1,44 @@
+.orders {
+  position: relative;
+  min-height: 530px;
+  background-color: $white;
+  padding: 20px;
+}
+
+.orders__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.orders__header-heding {
+  font-weight: 600;
+}
+
+.orders__header-button {
+  position: relative;
+  padding: 5px 10px;
+  background-color: $blue;
+  color: $white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.orders__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+@include breakpoint-down (768) {
+  .orders__header-heding {
+    font-weight: 600;
+    font-size: 22px;
+  }
+}
+
+@include breakpoint-down (480) {
+  .orders {
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,35 @@
+.status {
+  position: relative;
+  padding: 2px 4px;
+  background-color: $red;
+  color: $white;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.status--delivered {
+  background-color: $light-green;
+}
+
+.status--pending {
+  background-color: $orange;
+}
+
+.status--return {
+  background-color: $red;
+}
+
+.status--inprogress {
+  background-color: $light-blue;
+}
+
+@include breakpoint-down (1050) {
+  .status--inprogress {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 50px;
+    text-overflow: ellipsis;
+  }
+}

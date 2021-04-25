@@ -1,0 +1,44 @@
+
+.table__thead .table__td {
+  font-weight: 600;
+}
+
+.table__tbody .table__tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+.table__tbody .table__tr:last-child {
+  border-bottom: none;
+}
+
+.table__td {
+  padding: 9px 5px;
+}
+
+.table__tbody .table__td:last-child,
+.table__thead .table__td:last-child {
+  text-align: right;
+}
+
+.table__tbody .table__td:nth-child(2),
+.table__thead .table__td:nth-child(2) {
+  text-align: center;
+  padding-right: 20px;
+}
+
+.table__tbody .table__td:nth-child(3),
+.table__thead .table__td:nth-child(3) {
+  text-align: center;
+  padding-right: 20px;
+}
+
+@include breakpoint-down (480) {
+  .table {
+    width: 600px;
+  }
+}
