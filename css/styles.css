@@ -381,6 +381,19 @@ body {
   color: #03a9f4;
 }
 
+@media only screen and (max-width: 480px) {
+  .card {
+    padding: 10px 20px;
+  }
+  .card__numbers {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .card__icon-box {
+    font-size: 1.6em;
+  }
+}
+
 .details {
   position: relative;
   width: 100%;
