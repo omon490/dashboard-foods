@@ -1,0 +1,58 @@
+.customers {
+  position: relative;
+  min-height: 530px;
+  background-color: $white;
+  padding: 20px;
+}
+
+
+.customers__img-box {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.customers__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.customers__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customers__tr {
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+.customers__tr:hover span {
+  background-color: $blue;
+  color: $white;
+}
+
+.customers__td {
+  padding: 7px 10px;
+  width: 60px;
+}
+
+.customers__heading {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.customers__heading span {
+  font-size: 14px;
+  color: $grey;
+}
