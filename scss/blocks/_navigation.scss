@@ -1,0 +1,100 @@
+
+.navigation {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: $dark-blue;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.navigation.active {
+  width: 60px;
+}
+
+.navigation__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.navigation__item {
+  position: relative;
+  width: 100%;
+  list-style: none;
+
+  &:hover {
+    background-color: $blue;
+  }
+}
+
+.navigation__item:nth-child(1) {
+  margin-bottom: 20px;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.navigation__link {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $white;
+}
+
+.navigation__icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.navigation__icon .fas,
+.navigation__icon .fab {
+  color: white;
+  font-size: 24px;
+}
+
+.navigation__title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.navigation__heading {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+@include breakpoint-down (990) {
+  .navigation {
+    left: -300px;
+  }
+
+  .navigation.active {
+    left: 0;
+    width: 300px;
+  }
+}
+
+@include breakpoint-down (480) {
+  .navigation {
+    width: 100%;
+    left: -100%;
+    z-index: 1000;
+  }
+
+  .navigation.active {
+    width: 100%;
+    left: 0;
+  }
+}
