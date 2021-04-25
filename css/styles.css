@@ -327,4 +327,57 @@ body {
   left: 15px;
   top: 4px;
 }
+
+.card-box {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+@media only screen and (max-width: 990px) {
+  .card-box {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card-box {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  position: relative;
+  background-color: #Fff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.card__numbers {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card__name {
+  color: #999;
+}
+
+.card__icon-box {
+  font-size: 2.5em;
+  color: #03a9f4;
+}
 /*# sourceMappingURL=styles.css.map */
