@@ -6,6 +6,11 @@
   background-color: $dark-blue;
   transition: 0.5s;
   overflow: hidden;
+
+  background-image: url("../../img/navigation-bg.png"), linear-gradient(to right, #083a28, #3DB968);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .navigation.active {

@@ -99,10 +99,15 @@ body {
   position: fixed;
   width: 300px;
   height: 100%;
-  background-color: #003147;
+  background-color: #083a28;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
+  background-image: url("../../img/navigation-bg.png"), -webkit-gradient(linear, left top, right top, from(#083a28), to(#3DB968));
+  background-image: url("../../img/navigation-bg.png"), linear-gradient(to right, #083a28, #3DB968);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .navigation.active {
@@ -123,7 +128,7 @@ body {
 }
 
 .navigation__item:hover {
-  background-color: #03a9f4;
+  background-color: #3DB968;
 }
 
 .navigation__item:nth-child(1) {
@@ -378,7 +383,7 @@ body {
 
 .card__icon-box {
   font-size: 2.5em;
-  color: #03a9f4;
+  color: #3DB968;
 }
 
 @media only screen and (max-width: 480px) {
@@ -445,7 +450,7 @@ body {
 .orders__header-button {
   position: relative;
   padding: 5px 10px;
-  background-color: #03a9f4;
+  background-color: #3DB968;
   color: #Fff;
   text-decoration: none;
   border-radius: 6px;
@@ -479,7 +484,7 @@ body {
 }
 
 .table__tbody .table__tr:hover {
-  background-color: #03a9f4;
+  background-color: #3DB968;
   color: #Fff;
 }
 
@@ -582,12 +587,12 @@ body {
 }
 
 .customers__tr:hover {
-  background-color: #03a9f4;
+  background-color: #3DB968;
   color: #Fff;
 }
 
 .customers__tr:hover span {
-  background-color: #03a9f4;
+  background-color: #3DB968;
   color: #Fff;
 }
 
